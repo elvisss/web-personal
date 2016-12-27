@@ -1961,10 +1961,10 @@
 				    border-radius: 6px;
 				    line-height: 1;
 				    padding: 8px 10px;
-				    font-size: 12px;
+				    font-size: 11px;
 				    color: #aaa;
 				    text-transform: uppercase;
-				    margin-right: 5px;
+				    margin: 2.5px 5px 2.5px 0;
 				}
 					.item .tag:last-child {
 						margin-right: 0;
