@@ -94,15 +94,24 @@
 										</div>
 									</article>
 									<article class="item">
-										<a target="_blank" href="http://www.solcounseling.com/" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a target="_blank" href="http://www.perueduca.pe/" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
 										<header>
-											<h3><a target="_blank" href="http://www.solcounseling.com/">Sol Counseling</a></h3>
+											<h3><a target="_blank" href="http://www.perueduca.pe/">PerúEduca</a></h3>
 										</header>
 										<div class="tags">
 											<div class="tag">HTML</div>
 											<div class="tag">CSS</div>
 											<div class="tag">JS</div>
-											<div class="tag">PHP</div>
+										</div>
+									</article>
+									<article class="item">
+										<a target="_blank" href="http://www.pentolum.com/" class="image fit"><img src="images/pic15.jpg" alt="" /></a>
+										<header>
+											<h3><a target="_blank" href="http://www.pentolum.com/">Pentolum</a></h3>
+										</header>
+										<div class="tags">
+											<div class="tag">PYTHON</div>
+											<div class="tag">WEB SCRAPING</div>
 										</div>
 									</article>
 									<article class="item">
@@ -159,6 +168,7 @@
 										</header>
 										<div class="tags">
 											<div class="tag">ANGULARJS</div>
+											<div class="tag">PYTHON</div>
 											<div class="tag">HTML</div>
 											<div class="tag">CSS</div>
 										</div>
@@ -211,14 +221,25 @@
 										</div>
 									</article>
 									<article class="item">
-										<a target="_blank" href="http://www.perueduca.pe/" class="image fit"><img src="images/pic14.jpg" alt="" /></a>
+										<a target="_blank" href="http://www.dataluz.com/" class="image fit"><img src="images/pic16.jpg" alt="" /></a>
 										<header>
-											<h3><a target="_blank" href="http://www.perueduca.pe/">PerúEduca</a></h3>
+											<h3><a target="_blank" href="http://www.dataluz.com/">Dataluz</a></h3>
+										</header>
+										<div class="tags">
+											<div class="tag">PYTHON</div>
+											<div class="tag">WEB SCRAPING</div>
+										</div>
+									</article>
+									<article class="item">
+										<a target="_blank" href="http://www.solcounseling.com/" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<header>
+											<h3><a target="_blank" href="http://www.solcounseling.com/">Sol Counseling</a></h3>
 										</header>
 										<div class="tags">
 											<div class="tag">HTML</div>
 											<div class="tag">CSS</div>
 											<div class="tag">JS</div>
+											<div class="tag">PHP</div>
 										</div>
 									</article>
 								</div>
@@ -250,7 +271,7 @@
 						<div class="container">
 
 							<header>
-								<h2>Contact</h2>
+								<h2>Contacto</h2>
 							</header>
 
 							<p>Si está interesado en mi trabajo, tiene una pregunta o simplemente quiere decir hola, siéntese libre de ponerse en contacto.</p>
@@ -260,7 +281,7 @@
                   <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Nombre" required /></div>
                   <div class="6u$ 12u$(mobile)"><input type="email" name="email" placeholder="E-mail" required /></div>
                   <div class="12u$">
-                    <textarea name="message" placeholder="Mensaje"></textarea>
+                    <textarea name="message" placeholder="Mensaje" required></textarea>
                   </div>
                   <div class="12u$">
                     <input name="submit" type="submit" value="Enviar Mensaje" />
@@ -304,6 +325,7 @@
 						var $form = $(this);
 						var serializedData = $form.serialize();
 						$.post('mail.php', serializedData, function(res) {
+							$form.trigger("reset");
 							swal({
 							  title: "Gracias!",
 							  text: "Mensaje enviado satisfactoriamente!",
